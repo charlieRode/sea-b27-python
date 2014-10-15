@@ -11,12 +11,19 @@ class Queue:
         self._lst.insert(datum)
 
     def dequeue(self):
-        trace= self._lst.head
-        while trace.pointer.pointer is not None:
-            trace.head= trace.pointer
-        result= trace.pointer.pointer
-        trace.pointer= None
-        return result
+        if self._lst.size() > 1:
+            trace= self._lst.head
+            while trace.pointer.pointer is not None:
+                trace= trace.pointer
+            result= trace.pointer.datum
+            trace.pointer= None
+            return result
+        elif self._lst.size()==1:
+            result= self._lst.head.datum
+            self._lst.head= None
+            return result
+        else:
+            raise ValueError("Cannot dequeue an empty queue")
 
     def size(self):
         return self._lst.size()
