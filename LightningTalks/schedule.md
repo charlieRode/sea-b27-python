@@ -11,7 +11,7 @@ is merged.
 
         | Mon, Oct 13           | Tue, Oct 14           | Wed, Oct 15           | Thu, Oct 16           |
 --------|:----------------------|:----------------------|:----------------------|:----------------------|
-Slot 1  |                       | Alicija               | Charlie               | Jason (Fish shell)    |
+Slot 1  |                       |                       | Alicija               | Jason (Fish shell)    |
 Slot 2  |                       |                       |                       |                       |
 
         | Mon, Oct 20           | Tue, Oct 21           | Wed, Oct 22           | Thu, Oct 23           |
